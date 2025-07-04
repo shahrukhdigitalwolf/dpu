@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+body{
+    font-family: 'Mona Sans', sans-serif;
+}
+
+nav ul li ul.servDropdown{
+    display: none;
+}
+nav ul li:hover ul.servDropdown{
+    display: block;
+}
+
+.swiper-pagination span{
+    background-color: rgb(255, 255, 255);
+}
+
+.upDown{
+    animation: upDownAnimation 5s ease infinite;
+}
+
+@keyframes upDownAnimation {
+    0%, 100% {
+        transform: translateY(-25%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+}
+
+.leftRight{
+    animation: leftRightAnimation 5s ease infinite;
+}
+@keyframes leftRightAnimation {
+    0%, 100% {
+      transform: translateX(-30%);
+    }
+    50% {
+      transform: translateX(15%);
+    }
+}
+
+.cds{
+    -webkit-mask-image: url(../img/bg/sun-shadow-right.png);
+    -webkit-mask-size: contain;
+    -webkit-mask-position: top right;
+    -webkit-mask-repeat: no-repeat;
+}
+.cd1{
+    background-image: linear-gradient( 0deg,  rgba(255,162,0,1) 5.6%, rgba(255,195,0,1) 95.7% );
+}
+.cd2{
+    background-image: radial-gradient( circle 439px at 47.1% 47.8%,  rgba(8,208,115,1) 0%, rgba(0,0,0,1) 91.3% );
+}
+
+.textGrad{
+    background: -webkit-linear-gradient(#ced1ffa6, #ffffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.textgrad2{
+    background: linear-gradient(90deg, #2f57ef, #b966e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.textgrad3{
+    background: linear-gradient( #f0e1ff, #ffffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tab-content {
+    transition: opacity 0.3s ease;
+}
+.falc-next svg, .falc-prev svg{
+    fill: white;
+    height: 1em;
+    width: 1em;
+}
+
+  
