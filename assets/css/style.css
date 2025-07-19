@@ -77,3 +77,55 @@ nav ul li:hover ul.servDropdown{
 }
 
   
+
+
+
+.splide__slide > .text-con > .text-1{
+    transform: translateY(30%);
+    transition: 1s;
+}
+.splide__slide.is-active > .text-con > .text-1{
+    transform: translateY(0%);
+    transition: 1s;
+}
+.splide__slide > .text-con > div > .btn-1{
+    position: relative;
+    right:40px;
+    transition: 2s;
+}
+.splide__slide.is-active > .text-con > div > .btn-1{
+    position: relative;
+    right:0px;
+    transition: 2s;
+}
+.splide__slide > .text-con > div > .btn-2{
+    position: relative;
+    left:40px;
+    transition: 2s;
+}
+.splide__slide.is-active > .text-con > div > .btn-2{
+    position: relative;
+    left:0px;
+    transition: 1.5s;
+}
+/* .btn-1{
+    border: 3px solid;
+    position: relative;
+    right:20px
+} */
+.splide__slide > div > .bannerImg{
+    transform: scale(1);
+    transition: 10s;
+}
+.splide__slide.is-active > div > .bannerImg{
+    transform: scale(1.1);
+    transition: 10s;
+}
+
+.splide__slide.is-active > div > .textNo span{
+    background-color: #1a191d !important;
+    color: #FFF;
+}
+.splide__slide.splide__slide.is-active > div > .serText{
+    opacity: 1;
+}
