@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DizzlyArt - Where Creativity Takes Flight</title>
+  <meta name="description"
+    content="Discover DizzlyArt’s inspiring courses in VFX, animation, design, and 3D—where passion meets purpose, and every student finds their creative voice.">
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header id="header" class="fixed top-0 left-0 w-full z-[999] bg-transparent transition-all duration-500">
+    <div class="flex justify-between items-center container mx-auto py-2 lg:py-2.5 px-3">
+      <div class="relative z-[3]">
+        <a href="/dpu">
+          <img class="max-w-full w-[100px]" src="./assets/img/dizzly-logo.webp" alt="" width="150" height="100%">
+        </a>
+      </div>
+      <button id="openNav">
+        <svg class="w-6 h-6 text-black lg:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30"
+          height="30" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+        </svg>
+      </button>
+      <nav id="navbar"
+        class="grow lg:block absolute top-0 right-0 max-w-full w-[350px] bg-[#FFFFFFc4] backdrop-blur-[5px] lg:backdrop-blur-[0] lg:w-[100%] lg:block lg:bg-transparent lg:top-auto lg:translate-x-[0%] translate-x-[100%] transition-all duration-[.8s] ease">
+        <div class="pt-3 pe-3 lg:hidden mb-8">
+          <button id="closeNav" class="ms-auto block bg-[#cdcdcd] p-2 rounded">
+            <svg class="w-6 h-6 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18 17.94 6M18 18 6.06 6" />
+            </svg>
+          </button>
+        </div>
+        <ul class="lg:flex items-center justify-center block h-screen lg:h-auto">
+          <li class="mb-3 lg:mb-0">
+            <a class="py-4 px-4 text-black font-[400]" href="/dpu">Home</a>
+          </li>
+          <li class="mb-3 lg:mb-0">
+            <a class="py-4 px-4 text-black font-[400]" href="about-us.html">About Us</a>
+          </li>
+          <li class="relative mb-3 lg:mb-0">
+            <button type="button"
+              class="flex items-center justify-between w-full gap-x-1 text-black ps-4 pe-3 lg:pe-0 lg:py-[18px] dropdown-button">
+              <span class="font-[400]">Courses</span>
+              <svg class="w-6 h-6 text-black dropdown-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m8 10 4 4 4-4" />
+              </svg>
+            </button>
+            <ul id="dropdown"
+              class="dropdown-menu servDropdown shadow relative lg:absolute lg:top-[60px] bg-transparent lg:bg-[#ffffff] lg:w-[300px] lg:rounded-b px-3 lg:px-0 lg:max-h-[500px] max-h-0 overflow-hidden transition-[max-height] duration-300 ease-in-out">
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="advance-3d-animation-course.html">Advance 3D Animation</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="3d-animation-course.html">3D Animation</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="3d-lighting-rendering-and-comp-course.html">3D Lighting Rendering and Comp</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="3d-modeling-and-texturing-course.html">3D Modeling and Texturing</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="2d-animation-course.html">2D Animation</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="vfx-course.html">VFX Course</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="advance-graphics-design-course.html">Advance Graphics Design</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="graphics-design-course.html">Graphics Design</a>
+              </li>
+              <li>
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="motion-graphics-course.html">Motion Graphics</a>
+              </li>
+            </ul>
+          </li>
+          <li class="relative mb-3 lg:mb-0">
+            <button type="button"
+              class="flex items-center justify-between w-full gap-x-1 text-black ps-4 pe-3 lg:pe-0 lg:py-[18px] dropdown-button">
+              <span class="font-[400]">Production</span>
+              <svg class="w-6 h-6 text-black dropdown-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m8 10 4 4 4-4" />
+              </svg>
+            </button>
+            <ul id="dropdown"
+              class="dropdown-menu servDropdown shadow relative lg:absolute lg:top-[60px] bg-transparent lg:bg-[#ffffff] lg:w-[300px] lg:rounded-b px-3 lg:px-0 lg:max-h-[500px] max-h-0 overflow-hidden transition-[max-height] duration-300 ease-in-out">
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="production.html#2d-animation" data-tabs-target="#2d-animation">2D Animation</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="production.html#3d-animation" data-tabs-target="#3d-animation">3D Animation</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="production.html#graphics" data-tabs-target="#graphics">Graphics Design</a>
+              </li>
+              <li class="border-b border-slate-300">
+                <a class="text-black block p-[12px_0px_12px_20px] hover:text-slate-700 hover:bg-gray-50"
+                  href="production.html#graphics" data-tabs-target="#motion-graphics">Motion Design</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mb-3 lg:mb-0">
+            <a class="py-4 px-4 text-black font-[400]" href="#">Blogs</a>
+          </li>
+          <li class="mb-3 lg:mb-0">
+            <a class="py-4 px-4 text-black font-[400]" href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex items-center gap-x-1 hidden lg:flex">
+        <a href="tel:9874518885"
+          class="group relative inline-flex items-center justify-center text-base rounded-full bg-gray-900 px-2 py-2 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30">
+          <svg class="w-6 h-6 text-gray-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m17.0896 13.371 1.1431 1.1439c.1745.1461.3148.3287.4111.5349.0962.2063.1461.4312.1461.6588 0 .2276-.0499.4525-.1461.6587-.0963.2063-.4729.6251-.6473.7712-3.1173 3.1211-6.7739 1.706-9.90477-1.4254-3.13087-3.1313-4.54323-6.7896-1.41066-9.90139.62706-.61925 1.71351-1.14182 2.61843-.23626l1.1911 1.19193c1.1911 1.19194.3562 1.93533-.4926 2.80371-.92477.92481-.65643 1.72741 0 2.38391l1.8713 1.8725c.3159.3161.7443.4936 1.191.4936.4468 0 .8752-.1775 1.1911-.4936.8624-.8261 1.6952-1.6004 2.8382-.4565ZM14 8.98134l5.0225-4.98132m0 0L15.9926 4m3.0299.00002v2.98135" />
+          </svg>
+        </a>
+        <a href="https://wa.me/9874518885"
+          class="group relative inline-flex items-center justify-center text-base rounded-full bg-gray-900 px-2 py-2 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30">
+          <svg class="w-6 h-6 text-gray-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+              clip-rule="evenodd" />
+            <path fill="currentColor"
+              d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z" />
+          </svg>
+        </a>
+        <button type="button" data-modal-target="modal1"
+          class="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-6 py-2 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30">Apply
+          Now
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="pt-16 px-3 bg-linear-to-b from-[#FFF] to-[#ffeff6]">
+    <div
+      class="relative z-20 before:content-[''] before:w-full before:h-full before:bg-[#000] before:rounded-xl before:absolute before:top-0 before:left-0 before:z-[1] before:opacity-70">
+      <img class="w-full h-[300px] xl:h-[300px] bg-[#b1b1b1] rounded-xl object-cover"
+        src="./assets/img/banner/production.webp" alt="" width="1800" height="600">
+      <h1
+        class="text-white text-[35px] xl:text-[40px] font-[800] absolute top-[48%] left-[50%] md:left-[50%] z-[2] translate-x-[-50%] translate-y-[-50%] leading-tight">
+        Production</h1>
+    </div>
+  </section>
+  <section class="pt-12 bg-linear-to-t from-[#FFF] to-[#ffeff6]">
+    <div class="container mx-auto px-3 xl:px-0">
+      <!-- tab start -->
+      <div class="mb-4">
+        <ul class="flex flex-wrap justify-center -mb-px text-sm font-medium text-center" id="default-tab"
+          data-tabs-toggle="#default-tab-content" role="tablist">
+          <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              id="2d-animation-tab" data-tabs-target="#2d-animation" type="button" role="tab"
+              aria-controls="2d-animation" aria-selected="false">2D Animation</button>
+          </li>
+          <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              id="3d-animation-tab" data-tabs-target="#3d-animation" type="button" role="tab"
+              aria-controls="3d-animation" aria-selected="false">3D Animation</button>
+          </li>
+          <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              id="graphics-tab" data-tabs-target="#graphics" type="button" role="tab" aria-controls="graphics"
+              aria-selected="false">Graphics Design</button>
+          </li>
+          <li role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+              id="motion-graphics-tab" data-tabs-target="#motion-graphics" type="button" role="tab"
+              aria-controls="motion-graphics" aria-selected="false">Motion Graphics</button>
+          </li>
+        </ul>
+      </div>
+      <div id="default-tab-content">
+        <!-- tab 1 -->
+        <div class="hidden" id="2d-animation" role="tabpanel" aria-labelledby="2d-animation-tab">
+          <div class="pt-10">
+            <div class="mb-5">
+              <h2 class="text-[23px] md:text-3xl font-bold leading-tight">From Concept to Craft – We Make Ideas Visible
+              </h2>
+              <p class="max-w-full w-[800px] text-[15px]">Whether it's a movie, commercial, brand narrative, or YouTube
+                video, our production studio transforms ideas into compelling, attention-grabbing visuals. At DizzlyArt,
+                we're not merely training creatives—we are creatives.</p>
+            </div>
+            <span class="text-[13px] text-[#2f57ef] bg-[#2f57ef21] px-4 py-2 rounded-full mx-1.5">2D Animation
+              Projects</span>
+            <div class="flex flex-wrap gap-y-3 pt-5">
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/drkOBuiGPCM?si=1rx80ZM0Gx7Z0xnF" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/ki_R_4FcFK0?si=QVpTNk82uzbeMGRw" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/drkOBuiGPCM?si=1rx80ZM0Gx7Z0xnF" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/ki_R_4FcFK0?si=QVpTNk82uzbeMGRw" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div
+            class="py-8 lg:py-32 px-4 lg:px-20 my-6 lg:my-10 bg-[#000fc1] rounded-2xl bg-[url(assets/img/bg/bg-shape-1.webp)] bg-cover bg-[center_top]">
+            <h2
+              class="text-[20px] md:text-[50px] 2xl:text-[80px] text-white font-bold text-center mb-2 lg:mb-5 leading-tight">
+              Stories, Brands, and Aspirations<br class="hidden lg:block" /> All Translated into Visuals</h2>
+            <p class="text-center text-[15px] md:text-[18px] text-white max-w-full w-[1000px] mx-auto">Our production
+              team is comprised of artists, designers, animators, editors, and storytellers who understand how to
+              transform rough ideas into refined work that resonates with the audience. We provide creative assistance
+              to brands, individuals, and companies who want their message to stand out—be it in the form of an
+              animation, a graphic, a commercial, or a motion film. From script to screen, we give every project our
+              heart and soul.</p>
+          </div>
+          <div
+            class="flex flex-wrap gap-y-3 py-6 lg:py-12 relative z-20 before:content-[''] before:bg-[url(assets/img/bg/05.webp)] before:bg-contain before:w-full before:h-full before:absolute before:top-0 before:left-0 before:z-[-1] before:blur-[130px]">
+            <div class="w-full lg:w-[35%] px-1.5">
+              <div>
+                <div class="mb-2">
+                  <span class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl">Our</span>
+                </div>
+                <div class="mb-2 ps-5">
+                  <span
+                    class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl inline-flex items-center gap-x-2">
+                    <img src="./assets/icons/icons8-arrow-100.png" alt="">
+                    Production</span>
+                </div>
+                <div class="mb-2">
+                  <span class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl">
+                    Promise</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-[65%] px-1.5 flex justify-center flex-col">
+              <div>
+                <p class="text-[20px]">At <span class="text-[#dd1747] font-bold">DizzlyArt</span>, making is not
+                  work—it's an emotional journey of excellence. We handle every project with the love and attention it
+                  merits, whether it's a 30-second spot or a feature-length <span
+                    class="text-[#dd1747] font-bold">animated</span> film. We hear thoroughly, think out of the box, and
+                  give you visuals that scream without words.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6 lg:pt-12">
+            <h2 class="text-[25px] md:text-[45px] text-center font-bold leading-tight">Who We Work With</h2>
+            <p class="text-center">We proudly work for</p>
+            <div class="flex flex-wrap gap-y-3 mt-5 md:mt-10">
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/startup.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Startups and emerging brands</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/marketing.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Marketing agencies</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/film.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Film and television production
+                    houses</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/youtube.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">YouTube creators and
+                    influencers</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/books.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Educational and training
+                    sites</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/ngo.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">NGOs and social campaigns</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tab 2 -->
+        <div class="hidden" id="3d-animation" role="tabpanel" aria-labelledby="3d-animation-tab">
+          <div class="pt-10">
+            <div class="mb-5">
+              <h2 class="text-[23px] md:text-3xl font-bold leading-tight">From Concept to Craft – We Make Ideas Visible
+              </h2>
+              <p class="max-w-full w-[800px] text-[15px]">Whether it's a movie, commercial, brand narrative, or YouTube
+                video, our production studio transforms ideas into compelling, attention-grabbing visuals. At DizzlyArt,
+                we're not merely training creatives—we are creatives.</p>
+            </div>
+            <span class="text-[13px] text-[#2f57ef] bg-[#2f57ef21] px-4 py-2 rounded-full mx-1.5">3D Animation
+              Projects</span>
+            <div class="flex flex-wrap gap-y-3 pt-5">
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/drkOBuiGPCM?si=1rx80ZM0Gx7Z0xnF" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/ki_R_4FcFK0?si=QVpTNk82uzbeMGRw" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/drkOBuiGPCM?si=1rx80ZM0Gx7Z0xnF" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/ki_R_4FcFK0?si=QVpTNk82uzbeMGRw" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div
+            class="py-8 lg:py-32 px-4 lg:px-20 my-6 lg:my-10 bg-[#555879] rounded-2xl bg-[url(assets/img/bg/bg-shape-1.webp)] bg-cover bg-[center_top]">
+            <h2
+              class="text-[20px] md:text-[50px] 2xl:text-[80px] text-white font-bold text-center mb-2 lg:mb-5 leading-tight">
+              Stories, Brands, and Aspirations<br class="hidden lg:block" /> All Translated into Visuals</h2>
+            <p class="text-center text-[15px] md:text-[18px] text-white max-w-full w-[1000px] mx-auto">Our production
+              team is comprised of artists, designers, animators, editors, and storytellers who understand how to
+              transform rough ideas into refined work that resonates with the audience. We provide creative assistance
+              to brands, individuals, and companies who want their message to stand out—be it in the form of an
+              animation, a graphic, a commercial, or a motion film. From script to screen, we give every project our
+              heart and soul.</p>
+          </div>
+          <div
+            class="flex flex-wrap gap-y-3 py-6 lg:py-12 relative z-20 before:content-[''] before:bg-[url(assets/img/bg/05.webp)] before:bg-contain before:w-full before:h-full before:absolute before:top-0 before:left-0 before:z-[-1] before:blur-[130px]">
+            <div class="w-full lg:w-[35%] px-1.5">
+              <div>
+                <div class="mb-2">
+                  <span class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl">Our</span>
+                </div>
+                <div class="mb-2 ps-5">
+                  <span
+                    class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl inline-flex items-center gap-x-2">
+                    <img src="./assets/icons/icons8-arrow-100.png" alt="">
+                    Production</span>
+                </div>
+                <div class="mb-2">
+                  <span class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl">
+                    Promise</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-[65%] px-1.5 flex justify-center flex-col">
+              <div>
+                <p class="text-[20px]">At <span class="text-[#dd1747] font-bold">DizzlyArt</span>, making is not
+                  work—it's an emotional journey of excellence. We handle every project with the love and attention it
+                  merits, whether it's a 30-second spot or a feature-length <span
+                    class="text-[#dd1747] font-bold">animated</span> film. We hear thoroughly, think out of the box, and
+                  give you visuals that scream without words.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6 lg:pt-12">
+            <h2 class="text-[25px] md:text-[45px] text-center font-bold leading-tight">Who We Work With</h2>
+            <p class="text-center">We proudly work for</p>
+            <div class="flex flex-wrap gap-y-3 mt-5 md:mt-10">
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/startup.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Startups and emerging brands</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/marketing.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Marketing agencies</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/film.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Film and television production
+                    houses</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/youtube.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">YouTube creators and
+                    influencers</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/books.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Educational and training
+                    sites</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/ngo.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">NGOs and social campaigns</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tab 3 -->
+        <div class="hidden" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">
+          <div class="pt-10">
+            <div class="mb-5">
+              <h2 class="text-[23px] md:text-3xl font-bold leading-tight">From Concept to Craft – We Make Ideas Visible
+              </h2>
+              <p class="max-w-full w-[800px] text-[15px]">Whether it's a movie, commercial, brand narrative, or YouTube
+                video, our production studio transforms ideas into compelling, attention-grabbing visuals. At DizzlyArt,
+                we're not merely training creatives—we are creatives.</p>
+            </div>
+            <span class="text-[13px] text-[#2f57ef] bg-[#2f57ef21] px-4 py-2 rounded-full mx-1.5">Graphics Design
+              Projects</span>
+            <div class="flex flex-wrap gap-y-3 pt-5">
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/drkOBuiGPCM?si=1rx80ZM0Gx7Z0xnF" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/ki_R_4FcFK0?si=QVpTNk82uzbeMGRw" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/drkOBuiGPCM?si=1rx80ZM0Gx7Z0xnF" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/ki_R_4FcFK0?si=QVpTNk82uzbeMGRw" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div
+            class="py-8 lg:py-32 px-4 lg:px-20 my-6 lg:my-10 bg-[#E14434] rounded-2xl bg-[url(assets/img/bg/bg-shape-1.webp)] bg-cover bg-[center_top]">
+            <h2
+              class="text-[20px] md:text-[50px] 2xl:text-[80px] text-white font-bold text-center mb-2 lg:mb-5 leading-tight">
+              Stories, Brands, and Aspirations<br class="hidden lg:block" /> All Translated into Visuals</h2>
+            <p class="text-center text-[15px] md:text-[18px] text-white max-w-full w-[1000px] mx-auto">Our production
+              team is comprised of artists, designers, animators, editors, and storytellers who understand how to
+              transform rough ideas into refined work that resonates with the audience. We provide creative assistance
+              to brands, individuals, and companies who want their message to stand out—be it in the form of an
+              animation, a graphic, a commercial, or a motion film. From script to screen, we give every project our
+              heart and soul.</p>
+          </div>
+          <div
+            class="flex flex-wrap gap-y-3 py-6 lg:py-12 relative z-20 before:content-[''] before:bg-[url(assets/img/bg/05.webp)] before:bg-contain before:w-full before:h-full before:absolute before:top-0 before:left-0 before:z-[-1] before:blur-[130px]">
+            <div class="w-full lg:w-[35%] px-1.5">
+              <div>
+                <div class="mb-2">
+                  <span class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl">Our</span>
+                </div>
+                <div class="mb-2 ps-5">
+                  <span
+                    class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl inline-flex items-center gap-x-2">
+                    <img src="./assets/icons/icons8-arrow-100.png" alt="">
+                    Production</span>
+                </div>
+                <div class="mb-2">
+                  <span class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl">
+                    Promise</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-[65%] px-1.5 flex justify-center flex-col">
+              <div>
+                <p class="text-[20px]">At <span class="text-[#dd1747] font-bold">DizzlyArt</span>, making is not
+                  work—it's an emotional journey of excellence. We handle every project with the love and attention it
+                  merits, whether it's a 30-second spot or a feature-length <span
+                    class="text-[#dd1747] font-bold">animated</span> film. We hear thoroughly, think out of the box, and
+                  give you visuals that scream without words.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6 lg:pt-12">
+            <h2 class="text-[25px] md:text-[45px] text-center font-bold leading-tight">Who We Work With</h2>
+            <p class="text-center">We proudly work for</p>
+            <div class="flex flex-wrap gap-y-3 mt-5 md:mt-10">
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/startup.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Startups and emerging brands</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/marketing.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Marketing agencies</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/film.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Film and television production
+                    houses</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/youtube.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">YouTube creators and
+                    influencers</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/books.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Educational and training
+                    sites</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/ngo.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">NGOs and social campaigns</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tab 4 -->
+        <div class="hidden" id="motion-graphics" role="tabpanel" aria-labelledby="motion-graphics-tab">
+          <div class="pt-10">
+            <div class="mb-5">
+              <h2 class="text-[23px] md:text-3xl font-bold leading-tight">From Concept to Craft – We Make Ideas Visible
+              </h2>
+              <p class="max-w-full w-[800px] text-[15px]">Whether it's a movie, commercial, brand narrative, or YouTube
+                video, our production studio transforms ideas into compelling, attention-grabbing visuals. At DizzlyArt,
+                we're not merely training creatives—we are creatives.</p>
+            </div>
+            <span class="text-[13px] text-[#2f57ef] bg-[#2f57ef21] px-4 py-2 rounded-full mx-1.5">Motion Projects</span>
+            <div class="flex flex-wrap gap-y-3 pt-5">
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/drkOBuiGPCM?si=1rx80ZM0Gx7Z0xnF" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/ki_R_4FcFK0?si=QVpTNk82uzbeMGRw" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/drkOBuiGPCM?si=1rx80ZM0Gx7Z0xnF" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] lg:w-[25%] px-1.5">
+                <iframe class="rounded-xl h-[100px] lg:h-[210px] bg-gray-200" width="100%" height="210"
+                  src="https://www.youtube.com/embed/ki_R_4FcFK0?si=QVpTNk82uzbeMGRw" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div
+            class="py-8 lg:py-32 px-4 lg:px-20 my-6 lg:my-10 bg-[#C78A3B] rounded-2xl bg-[url(assets/img/bg/bg-shape-1.webp)] bg-cover bg-[center_top]">
+            <h2
+              class="text-[20px] md:text-[50px] 2xl:text-[80px] text-white font-bold text-center mb-2 lg:mb-5 leading-tight">
+              Stories, Brands, and Aspirations<br class="hidden lg:block" /> All Translated into Visuals</h2>
+            <p class="text-center text-[15px] md:text-[18px] text-white max-w-full w-[1000px] mx-auto">Our production
+              team is comprised of artists, designers, animators, editors, and storytellers who understand how to
+              transform rough ideas into refined work that resonates with the audience. We provide creative assistance
+              to brands, individuals, and companies who want their message to stand out—be it in the form of an
+              animation, a graphic, a commercial, or a motion film. From script to screen, we give every project our
+              heart and soul.</p>
+          </div>
+          <div
+            class="flex flex-wrap gap-y-3 py-6 lg:py-12 relative z-20 before:content-[''] before:bg-[url(assets/img/bg/05.webp)] before:bg-contain before:w-full before:h-full before:absolute before:top-0 before:left-0 before:z-[-1] before:blur-[130px]">
+            <div class="w-full lg:w-[35%] px-1.5">
+              <div>
+                <div class="mb-2">
+                  <span class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl">Our</span>
+                </div>
+                <div class="mb-2 ps-5">
+                  <span
+                    class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl inline-flex items-center gap-x-2">
+                    <img src="./assets/icons/icons8-arrow-100.png" alt="">
+                    Production</span>
+                </div>
+                <div class="mb-2">
+                  <span class="text-white text-[25px] md:text-[35px] font-bold bg-black px-5 py-2 rounded-xl">
+                    Promise</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-[65%] px-1.5 flex justify-center flex-col">
+              <div>
+                <p class="text-[20px]">At <span class="text-[#dd1747] font-bold">DizzlyArt</span>, making is not
+                  work—it's an emotional journey of excellence. We handle every project with the love and attention it
+                  merits, whether it's a 30-second spot or a feature-length <span
+                    class="text-[#dd1747] font-bold">animated</span> film. We hear thoroughly, think out of the box, and
+                  give you visuals that scream without words.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6 lg:pt-12">
+            <h2 class="text-[25px] md:text-[45px] text-center font-bold leading-tight">Who We Work With</h2>
+            <p class="text-center">We proudly work for</p>
+            <div class="flex flex-wrap gap-y-3 mt-5 md:mt-10">
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/startup.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Startups and emerging brands</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/marketing.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Marketing agencies</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/film.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Film and television production
+                    houses</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/youtube.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">YouTube creators and
+                    influencers</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/books.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">Educational and training
+                    sites</span>
+                </div>
+              </div>
+              <div class="w-[50%] md:w-[33.33%] xl:w-[16.66%] px-1.5">
+                <div
+                  class="bg-[#e1e1e1] text-center px-1 md:px-3 py-3 rounded-xl h-[200px] flex justify-around flex-col bgborder">
+                  <img class="mx-auto" src="./assets/icons/ngo.png" alt="" width="70" height="70">
+                  <span class="text-[15px] md:text-[18px] text-[#121727] font-bold">NGOs and social campaigns</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tab end -->
+
+      <!-- form -->
+      <div class="mt-5 lg:mt-10">
+        <div class="flex flex-wrap gap-y-5">
+          <div class="w-full lg:w-[50%] px-1.5">
+            <img class="rounded-xl w-full h-[300px] lg:h-[650px] object-cover"
+              src="./assets//img/others/2151536976.webp" alt="">
+          </div>
+          <div class="w-full lg:w-[50%] px-1.5">
+            <div class="bg-[#efefef] py-6 lg:py-12 px-6 lg:px-12 rounded-xl">
+              <div class="mb-10">
+                <div class="mb-5">
+                  <span class="text-[13px] text-[#2f57ef] bg-[#2f57ef21] px-4 py-2 rounded-full">EDUCATION FOR
+                    EVERYONE</span>
+                </div>
+                <h2
+                  class="text-[#24292d] text-[35px] md:text-[35px] lg:text-[40px] font-bold leading-[1] max-w-full w-[600px]">
+                  You can contact with us</h2>
+              </div>
+              <form action="#">
+                <div class="flex flex-wrap">
+                  <div class="w-full px-1.5">
+                    <div class="relative z-0 w-full mb-5 group">
+                      <input autocomplete="off" type="text" name="floating_first_name" id="floating_first_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                      <label for="floating_first_name"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                        name</label>
+                    </div>
+                  </div>
+                  <div class="w-full px-1.5">
+                    <div class="relative z-0 w-full mb-5 group">
+                      <input autocomplete="off" type="email" name="floating_email" id="floating_email"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                      <label for="floating_email"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                        address</label>
+                    </div>
+                  </div>
+                  <div class="w-full px-1.5">
+                    <div class="relative z-0 w-full mb-5 group">
+                      <input autocomplete="off" type="text" name="phone" id="phone"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                      <label for="phone"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone</label>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="relative z-0 w-full mb-5 group">
+                      <select id="course" name="course"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-black   focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required="">
+                        <option value="" selected disabled>Select Course</option>
+                        <option value="Advance 3D Animation Course">Advance 3D Animation Course</option>
+                        <option value="3D Animation Course">3D Animation Course</option>
+                        <option value="2D Animation Course">2D Animation Course</option>
+                        <option value="3D Modeling and Texturing Course">3D Modeling and Texturing Course</option>
+                        <option value="3D Lighting Rendering and Comp Course">3D Lighting Rendering and Comp Course
+                        </option>
+                        <option value="Advance Graphics Design Course">Advance Graphics Design Course</option>
+                        <option value="Graphics Design Course">Graphics Design Course</option>
+                        <option value="VFX Course">VFX Course</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="relative z-0 w-full mb-5 group">
+                      <select id="qualification" name="qualification"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-black   focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required="">
+                        <option value="" selected disabled>qualification</option>
+                        <option value="10th Passout">10th Passout</option>
+                        <option value="11th Passout">11th Passout</option>
+                        <option value="12th Passout">12th Passout</option>
+                        <option value="Pursuing Graduation">Pursuing Graduation</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-full px-1.5">
+                    <div class="relative z-0 w-full mb-5 group">
+                      <input autocomplete="off" type="text" name="message" id="message"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                      <label for="message"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message
+                        (If Any)</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 flex justify-center">
+                  <button type="submit"
+                    class="group relative inline-flex items-center justify-center w-full text-base rounded-xl bg-gray-900 px-15 py-2 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+                    href="#">Send<svg aria-hidden="true" viewBox="0 0 10 10" height="10" width="10" fill="none"
+                      class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2">
+                      <path d="M0 5h7" class="transition opacity-0 group-hover:opacity-100"></path>
+                      <path d="M1 1l4 4-4 4" class="transition group-hover:translate-x-[3px]"></path>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- faq -->
+      <div
+        class="py-6 lg:py-12 relative z-20 before:content-[''] before:bg-[url(assets/img/bg/clay-decoration.webp)] before:bg-contain before:w-full before:h-full before:absolute before:top-0 before:left-0 before:z-[-1] before:blur-[200px] before:opacity-40">
+        <div class="text-start mb-5">
+          <h2 class="text-[25px] lg:text-[30px] font-bold leading-tight">Frequently Asked Questions (FAQs)</h2>
+          <p class="max-w-full w-[800px] text-[15px]">There are a few frequently asked questions that you might also
+            have regarding the course. Please go through the following section for the same:</p>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-[50%] px-1.5">
+            <div class="bg-[#FFFFFF] rounded-lg mb-3">
+              <button id="header-1" onclick="toggleAccordion(1)"
+                class="w-full flex justify-between text-left items-center text-slate-100 transition-colors duration-300 bg-[#FFFFFF]">
+                <span class="text-[15px] md:text-[18px] text-[#000] text-left px-3 leading-tight font-[400]"> Do you
+                  accept freelance or low-budget projects?</span>
+                <span id="icon-1" class="text-slate-800 transition-transform duration-300 bg-[##FFFFFF] py-6 px-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path fill="black"
+                      d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                  </svg>
+                </span>
+              </button>
+              <div id="content-1"
+                class="overflow-hidden transition-all duration-300 ease-in-out px-5 border-b border-slate-300"
+                style="max-height: 0px;"> <!-- Set the default max-height -->
+                <div class="py-5">
+                  <p>
+                    Yes, we do. We have diverse budgets to work with and enjoy developing small brands visually.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-lg mb-3">
+              <button id="header-2" onclick="toggleAccordion(2)"
+                class="w-full flex justify-between text-left items-center text-slate-100 transition-colors duration-300 bg-[#FFFFFF]">
+                <span class="text-[15px] md:text-[18px] text-[#000] text-left px-3 leading-tight font-[400]">Am I able
+                  to learn and work on projects as well?</span>
+                <span id="icon-2" class="text-slate-800 transition-transform duration-300 bg-[##FFFFFF] py-6 px-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path fill="black"
+                      d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                  </svg>
+                </span>
+              </button>
+              <div id="content-2"
+                class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5 border-b border-slate-300">
+                <div class="py-5">
+                  <p>
+                    Yes. A lot of our senior students are allowed to assist with our production work and develop
+                    real-life experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-[50%] px-1.5">
+            <!-- Accordion Item 3 -->
+            <div class="bg-[#FFFFFF] rounded-lg mb-3">
+              <button id="header-3" onclick="toggleAccordion(3)"
+                class="w-full flex justify-between text-left items-center text-slate-100 transition-colors duration-300 bg-[#FFFFFF]">
+                <span class="text-[15px] md:text-[18px] text-[#000] text-left px-3 leading-tight font-[400]">What types
+                  of animations do you create?</span>
+                <span id="icon-3" class="text-slate-800 transition-transform duration-300 bg-[##FFFFFF] py-6 px-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path fill="black"
+                      d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                  </svg>
+                </span>
+              </button>
+              <div id="content-3"
+                class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5 border-b border-slate-300">
+                <div class="py-5">
+                  <p>
+                    We do 2D/3D animations, explainer videos, animated logos, educational content, and even cinematic
+                    scenes for movies and brands.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-lg mb-3">
+              <button id="header-4" onclick="toggleAccordion(4)"
+                class="w-full flex justify-between text-left items-center text-slate-100 transition-colors duration-300 bg-[#FFFFFF]">
+                <span class="text-[15px] md:text-[18px] text-[#000] text-left px-3 leading-tight font-[400]">How do I
+                  request a quote or begin a project with you?</span>
+                <span id="icon-4" class="text-slate-800 transition-transform duration-300 bg-[##FFFFFF] py-6 px-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path fill="black"
+                      d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                  </svg>
+                </span>
+              </button>
+              <div id="content-4"
+                class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5 border-b border-slate-300">
+                <div class="py-5">
+                  <p>
+                    Simply contact us via our Contact Page, and we'll connect to talk through your vision, timeline, and
+                    objectives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer
+    class="relative z-20 overflow-hidden bg-[#101010] lg:p-[50px_0_50px_0] p-[50px_0_100px_0] bg-cover bg-center before:content-[''] before:bg-[url(assets/img/bg/footer-bg-img.webp)] before:bg-no-repeat before:w-full before:h-full before:absolute before:-bottom-40 before:left-0 before:z-[-1]">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap mb-3 md:mb-10">
+        <div class="w-full md:w-[40%] border-r-0 md:border-r border-gray-500 px-4 pb-4 md:pb-0">
+          <img src="assets/img/dizzly-logo.webp" width="200" height="100%" alt="footer_logo"
+            class="pb-4 w-[100px] md:w-[150px]">
+          <p class="text-[#FFF] pb-4">
+            DizzlyArt is where imaginative creativity finds its voice! We help guide your passion from VFX, graphics,
+            animation, and design through 2D and 3D art, step by step, as you turn your imagination into a tangible
+            career.
+          </p>
+          <div class="flex items-center gap-3 w-[200px]">
+            <div>
+              <a class="text-white border border-slate-300 w-full block p-[8px_8px] rounded hover:bg-[#bebebe52] transition-all duration-300"
+                href="https://www.facebook.com/dizzly.art/" target="_blank">
+                <svg class="w-6 h-6 text-white   mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  width="50" height="50" fill="white" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a class="text-white border border-slate-300 w-full block p-[8px_8px] rounded hover:bg-[#bebebe52] transition-all duration-300"
+                href="https://www.instagram.com/dizzlyart?igsh=YzljYTk1ODg3Zg==" target="_blank">
+                <svg class="w-6 h-6 text-white  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50"
+                  height="50" fill="white" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a class="text-white border border-slate-300 w-full block p-[8px_8px] rounded hover:bg-[#bebebe52] transition-all duration-300"
+                href="https://www.linkedin.com/company/dizzly-art-pvt-ltd/posts/?feedView=all" target="_blank">
+                <svg class="w-6 h-6 text-gray-800  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50"
+                  height="50" fill="white" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                    clip-rule="evenodd"></path>
+                  <path d="M7.2 8.809H4V19.5h3.2V8.809Z"></path>
+                </svg>
+
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-[27%] border-r-0 px-4 md:px-[30px] md:border-r border-gray-500 pb-4 md:pb-0">
+          <h2 class="text-white font-bold text-[20px] mb-4">Courses</h2>
+          <div class="flex flex-wrap">
+            <ul>
+              <li class="mb-2">
+                <a class="text-white" href="advance-3d-animation-course.html">Advance 3D Animation</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-white" href="3d-animation-course.html">3D Animation</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-white" href="3d-lighting-rendering-and-comp-course.html">3D Lighting Rendering and
+                  Comp</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-white" href="3d-modeling-and-texturing-course.html">3d Modeling and Texturing</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-white" href="2d-animation-course.html">2D Animation</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-white" href="vfx-course.html">VFX Course</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-white" href="advance-graphics-design-course.html">Advance Graphics Design</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-white" href="graphics-design-course.html">Graphics Design</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-white" href="motion-graphics-course.html">Motion Graphics</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full md:w-[29%] px-4 md:px-[30px]">
+          <h2 class="text-white font-bold text-[20px] mb-4">Quick Links</h2>
+          <ul>
+            <li class="mb-3"><a href="/dpu" class="text-[#FFFBED] text-[15px]">Home</a></li>
+            <li class="mb-3"><a href="about-us.html" class="text-[#FFFBED] text-[15px]">About Us</a></li>
+            <li class="mb-3"><a href="#" class="text-[#FFFBED] text-[15px]">Blogs</a></li>
+            <li class="mb-3"><a href="contact-us.html" class="text-[#FFFBED] text-[15px]">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <hr class="mb-3 text-gray-500">
+
+      <div class="flex justify-between items-center pt-6">
+        <div>
+          <a href="#" class="text-[#fff] mr-2 text-[11px] md:text-[15px]">
+            Privacy Policy
+          </a>
+          <span class="text-white">
+            |
+          </span>
+          <a href="#" class="text-[#fff] ml-2 text-[11px] md:text-[15px]">Terms &amp; Conditions</a>
+        </div>
+        <p class="text-[#fff] text-[11px] md:text-[15px]">
+          Copyright @2025
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <section class="block lg:hidden">
+
+    <div
+      class="fixed bottom-0 left-0 z-50 w-full h-16 bg-[#24292d] border-t border-[#8b8b8b] dark:bg-gray-700 dark:border-gray-600">
+      <div class="grid h-full max-w-lg grid-cols-3 mx-auto font-medium">
+        <a href="tel:#"
+          class="inline-flex flex-col items-center justify-center px-5 border-gray-200 border-x hover:bg-[#0a6522] dark:hover:bg-[#0a6522] group dark:border-[#0a6522]">
+          <svg class="w-6 h-6 text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M6.97825 3.99999c-.3729 0-.74128.08169-1.07926.23933-.32394.1511-.61243.36846-.84696.63787-1.81892 1.82189-2.35302 3.87423-1.89899 5.93671.43916 1.9949 1.77747 3.8929 3.45642 5.572 1.67897 1.6791 3.57614 3.0176 5.57034 3.4591 2.0612.4563 4.1141-.0726 5.9396-1.8853.2705-.2348.4888-.524.6405-.8489.1581-.3387.2401-.7081.2401-1.0819 0-.3739-.082-.7432-.2401-1.0819-.1516-.3247-.3696-.6137-.6398-.8483l-1.2098-1.2106c-.5043-.5041-1.1879-.7872-1.9007-.7872-.7128 0-1.3968.2835-1.9011.7876l-.6178.6181c-.1512.1513-.3563.2363-.5701.2363-.2138 0-.4189-.085-.5701-.2363l-1.85336-1.8545c-.15117-.1513-.23609-.3565-.23609-.5704 0-.214.08493-.4192.23613-.5705l.61812-.61851c.5037-.50461.7867-1.18868.7867-1.90191s-.2833-1.39767-.7871-1.90228L8.90499 4.8778c-.23462-.26969-.5233-.48727-.84749-.63848-.33798-.15764-.70636-.23933-1.07925-.23933Z">
+            </path>
+            <path fill-rule="evenodd"
+              d="M14.9925 3.99996c0-.55228.4477-.99999 1-.99999l3.03.00002c.5523 0 1 .44772 1 1v2.98135c0 .55228-.4478 1-1 1-.5523 0-1-.44772-1-1v-.58113l-3.3184 3.29112c-.3921.38887-1.0253.38627-1.4142-.00583-.3889-.39213-.3863-1.02529.0059-1.4142l3.2983-3.27133h-.6016c-.5523 0-1-.44772-1-1.00001Z"
+              clip-rule="evenodd"></path>
+          </svg>
+
+          <span
+            class="text-sm text-[#FFFFFF] dark:text-gray-400 group-hover:text-slate-300 dark:group-hover:text-blue-500">Call</span>
+        </a>
+        <a href="https://wa.me/#"
+          class="inline-flex flex-col items-center justify-center px-5 border-e border-gray-200 hover:bg-[#0a6522] dark:hover:bg-[#0a6522] group dark:border-[#0a6522]">
+          <svg class="w-6 h-6 text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+              clip-rule="evenodd"></path>
+            <path fill="currentColor"
+              d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z">
+            </path>
+          </svg>
+          <span
+            class="text-sm text-[#FFFFFF] dark:text-gray-400 group-hover:text-slate-300 dark:group-hover:text-blue-500">Chat</span>
+        </a>
+        <button type="button" data-modal-target="modal1"
+          class="inline-flex flex-col items-center justify-center px-5 hover:bg-[#0a6522] dark:hover:bg-[#0a6522] group">
+          <svg class="w-6 h-6 text-[#FFFFFF] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span
+            class="text-sm text-[#FFFFFF] dark:text-gray-400 group-hover:text-slate-300 dark:group-hover:text-blue-500">Apply
+            Now</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div id="modal1"
+    class="modal pointer-events-none fixed top-0 left-0 inset-0 z-[999] grid h-screen w-screen place-items-center bg-[#000000a6] bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+    <div class="absolute w-[600px] max-w-[95%] rounded-lg bg-white shadow-sm">
+      <div class="absolute right-1 top-1 z-[999]">
+        <button class="close-modal p-3" type="button" aria-label="close-modal">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
+            <path fill="black"
+              d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div class="relative leading-normal text-slate-600 font-light">
+        <div class="bg-[#F2F2F2] p-6 lg:p-8">
+          <div>
+            <h3 class="text-[20px] lg:text-[25px] font-bold text-center mb-4">Admission Enquiry
+              Form!</h3>
+          </div>
+          <form action="#">
+            <div class="flex flex-wrap">
+              <div class="w-full px-1.5">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input autocomplete="off" type="text" name="floating_first_name" id="floating_first_name"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required />
+                  <label for="floating_first_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                    name</label>
+                </div>
+              </div>
+              <div class="w-full px-1.5">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input autocomplete="off" type="email" name="floating_email" id="floating_email"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required />
+                  <label for="floating_email"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                    address</label>
+                </div>
+              </div>
+              <div class="w-full px-1.5">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input autocomplete="off" type="text" name="phone" id="phone"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required />
+                  <label for="phone"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone</label>
+                </div>
+              </div>
+              <div class="w-full">
+                <div class="relative z-0 w-full mb-5 group">
+                  <select id="course" name="course"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-black   focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required="">
+                    <option value="" selected disabled>Select Course</option>
+                    <option value="Advance 3D Animation Course">Advance 3D Animation Course</option>
+                    <option value="3D Animation Course">3D Animation Course</option>
+                    <option value="2D Animation Course">2D Animation Course</option>
+                    <option value="3D Modeling and Texturing Course">3D Modeling and Texturing Course</option>
+                    <option value="3D Lighting Rendering and Comp Course">3D Lighting Rendering and Comp Course
+                    </option>
+                    <option value="Advance Graphics Design Course">Advance Graphics Design Course</option>
+                    <option value="Graphics Design Course">Graphics Design Course</option>
+                    <option value="VFX Course">VFX Course</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-full">
+                <div class="relative z-0 w-full mb-5 group">
+                  <select id="qualification" name="qualification"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-black   focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required="">
+                    <option value="" selected disabled>qualification</option>
+                    <option value="10th Passout">10th Passout</option>
+                    <option value="11th Passout">11th Passout</option>
+                    <option value="12th Passout">12th Passout</option>
+                    <option value="Pursuing Graduation">Pursuing Graduation</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-full px-1.5">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input autocomplete="off" type="text" name="message" id="message"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required />
+                  <label for="message"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message
+                    (If Any)</label>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 flex justify-center">
+              <button type="submit"
+                class="group relative inline-flex items-center justify-center w-full text-base rounded-xl bg-gray-900 px-15 py-2 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+                href="#">Send<svg aria-hidden="true" viewBox="0 0 10 10" height="10" width="10" fill="none"
+                  class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2">
+                  <path d="M0 5h7" class="transition opacity-0 group-hover:opacity-100"></path>
+                  <path d="M1 1l4 4-4 4" class="transition group-hover:translate-x-[3px]"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabButtons = document.querySelectorAll('[data-tabs-target]');
+      const tabContents = document.querySelectorAll('[role="tabpanel"]');
+
+      function activateTab(targetId) {
+        tabButtons.forEach(btn => {
+          const isTarget = btn.getAttribute('data-tabs-target') === `#${targetId}`;
+          btn.setAttribute('aria-selected', isTarget);
+          if (isTarget) {
+            btn.classList.add('border-orange-500', 'text-orange-500');
+          } else {
+            btn.classList.remove('border-orange-500', 'text-orange-500');
+          }
+        });
+
+        tabContents.forEach(tab => {
+          tab.classList.toggle('hidden', tab.id !== targetId);
+        });
+      }
+
+      // On click
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const targetId = button.getAttribute('data-tabs-target').substring(1);
+          activateTab(targetId);
+          history.replaceState(null, '', `#${targetId}`); // Update URL hash
+        });
+      });
+
+      // On load: check hash from URL
+      const urlHash = window.location.hash.replace('#', '');
+      const initialTabId = urlHash && document.getElementById(urlHash) ? urlHash : 'profile';
+      activateTab(initialTabId);
+    });
+  </script>
+  <script>
+    function toggleAccordion(e) {
+      let t = document.querySelectorAll('[id^="content-"]'),
+        l = document.querySelectorAll('[id^="icon-"]'),
+        n = document.querySelectorAll('[id^="header-"]'),
+        o = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="black" class="w-4 h-4">
+    <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+    </svg>
+    `,
+        s = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="black" class="w-4 h-4">
+    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+    </svg>
+    `;
+      t.forEach((t, o) => {
+        o + 1 !== e &&
+          ((t.style.maxHeight = "0"),
+            (l[o].innerHTML = s),
+            n[o].classList.remove("bg-[#e5e5e5]"),
+            n[o].classList.add("bg-[#FFFFFF]"));
+      });
+      let a = document.getElementById(`content-${e}`),
+        r = document.getElementById(`icon-${e}`),
+        c = document.getElementById(`header-${e}`);
+      a.style.maxHeight && "0px" !== a.style.maxHeight
+        ? ((a.style.maxHeight = "0"),
+          (r.innerHTML = s),
+          c.classList.remove("bg-[#e5e5e5]"),
+          c.classList.add("bg-[#FFFFFF]"))
+        : ((a.style.maxHeight = a.scrollHeight + "px"),
+          (r.innerHTML = o),
+          c.classList.remove("bg-[#FFFFFF]"),
+          c.classList.add("bg-[#e5e5e5]"));
+    }
+  </script>
+</body>
+
+</html>

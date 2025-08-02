@@ -129,3 +129,8 @@ nav ul li:hover ul.servDropdown{
 .splide__slide.splide__slide.is-active > div > .serText{
     opacity: 1;
 }
+
+.bgborder{
+    background: linear-gradient(#ffffff, #f8f8f8) padding-box, linear-gradient(145deg, #ffc400 20%, #e94646, #ffb004) border-box !important;
+    border: 2px solid transparent !important;
+  } 
