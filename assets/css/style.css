@@ -3,6 +3,81 @@ body{
     font-family: 'Mona Sans', sans-serif;
 }
 
+@media (width >= 95rem) {
+    .container {
+        max-width: 90rem;
+    }
+  }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 3 / 3;
+    border-radius: 5px;
+    box-shadow: -3px 3px 10px #8d8d8d;
+}
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background: #d3d3d37a;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 0 4px;
+}
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
 nav ul li ul.servDropdown{
     display: none;
 }
